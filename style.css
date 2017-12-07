@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+#picsCarousel {
+  margin: 0 auto;
+  border: 3px solid #000000;
+  height: 605px;
+  width: 805px;
+  overflow: hidden;
+}
+
+#picsCarousel img {
+  height: 600px;
+  width: 800px;
+}
+
+#picsCarousel ul {
+  width: 4000px;
+}
+
+#picsCarousel li {
+  float: left;
+  list-style-type: none;
+}
