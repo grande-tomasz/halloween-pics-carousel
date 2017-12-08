@@ -9,7 +9,11 @@ li {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
 #picsCarousel {
+  position: relative;
   margin: 0 auto;
   border: 3px solid #000000;
   height: 605px;
@@ -29,4 +33,39 @@ li {
 #picsCarousel li {
   float: left;
   list-style-type: none;
+}
+
+.carousel-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,0);
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.carousel-control:focus, 
+.carousel-control:hover {
+  color: #fff;
+  text-decoration: none;
+  filter: alpha(opacity=90);
+  outline: 0;
+  opacity: .9;
+}
+
+.carousel-control.left {
+  left: 0;
+  background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+}
+
+.carousel-control.right {
+  right: 0;
+  background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
 }
