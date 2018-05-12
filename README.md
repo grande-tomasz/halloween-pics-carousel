@@ -1,6 +1,6 @@
 # Halloween Picture Carousel
 
-Simple automative picture carousel with battons to change the current picture.
+Simple automatic picture carousel with battons to change the current picture.
 
 ## Origins
 
